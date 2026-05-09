@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Stopping containers..."
+docker stop $(docker ps -aq) 2>/dev/null
+
+echo "Removing containers..."
+docker rm $(docker ps -aq) 2>/dev/null
+
+echo "Cleaning Docker..."
+docker system prune -a -f
+
+echo "Done. Clean environment."
