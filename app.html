@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mon Premier Site</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      background: #111827;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+      color: #cbd5e1;
+    }
+
+    button {
+      padding: 12px 24px;
+      border: none;
+      background: #38bdf8;
+      color: black;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 50px 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 12px;
+      width: 300px;
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111827;
+      margin-top: 40px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>DevOps Junior</h1>
+
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#">Projets</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Bienvenue sur mon site</h2>
+
+    <p>
+      Ceci est mon premier site web hébergé avec NGINX.
+      Je progresse en Linux, Docker, Kubernetes et DevOps.
+    </p>
+
+    <button onclick="message()">
+      Cliquez ici
+    </button>
+  </section>
+
+  <section class="cards">
+
+    <div class="card">
+      <h3>Linux</h3>
+      <p>
+        Administration système, commandes Linux et scripting Bash.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Docker</h3>
+      <p>
+        Conteneurisation des applications et déploiements simples.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>NGINX</h3>
+      <p>
+        Reverse proxy, hébergement web et gestion du trafic.
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 - Mon premier projet DevOps
+  </footer>
+
+  <script>
+    function message() {
+      alert("Bravo, ton JavaScript fonctionne !");
+    }
+  </script>
+
+</body>
+</html>
