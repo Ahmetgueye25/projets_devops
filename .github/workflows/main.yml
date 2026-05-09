@@ -1,13 +1,13 @@
 name: CI-CD
 
-        on:
+on:
   push:
     branches:
       - main
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs on: ubuntu-latest
 
     steps:
       - name: Checkout
